@@ -1,0 +1,51 @@
+/* Sidebar Container */
+#sidebar {
+    position: fixed;
+    top: 60px; /* Start below the header */
+    left: 0;
+    height: calc(100% - 60px); /* Adjust to not cover the header */
+    width: 80px;
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1; /* Ensure it stays below the header */
+}
+
+/* Sidebar Items */
+.sidebar-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar-item svg {
+    width: 24px;
+    height: 24px;
+    color: rgb(241, 241, 241);
+    fill: rgb(255, 255, 255);
+    
+    
+    
+}
+
+.sidebar-item span {
+    font-size: 12px;
+    margin-top: 5px;
+    color: white;
+}
+
+/* Hover Effect */
+.sidebar-item:hover {
+    background-color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+}
